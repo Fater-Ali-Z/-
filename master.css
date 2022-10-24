@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:cairo;
+    background-image: url(/1661249877079.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(23, 27, 34, 0.596);
+    backdrop-filter: blur(20px);
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 58, 157);
+}
+.container .c {
+    margin-top: -100px;
+}
+.container .c h3 {
+    color: rgb(120, 214, 255);
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 132, 255, 0.129);
+}
+.container .c input[type = "button"] {
+    position:absolute;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 100px;
+    height: 60px;
+    border: none;
+    outline: none;
+    font-family: cairo;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.container .c .no,
+.container .c .no2 {
+    left: 330px;
+    color: red;
+    background-color: hsla(0, 100%, 50%, 0.096);
+
+}
+.container .c .no2{
+    display: none;
+}
+
+.container .c .yes2{
+    display: none;
+}
+.container .c .no:hover,
+.container .c .no2:hover {
+    background-color: rgba(255, 0, 0, 0.181);
+}
+
+.container .c .yes,
+.container .c .yes2 {
+    color: rgb(0, 255, 51);
+    background-color: rgba(0, 255, 51, 0.075);
+}
+.container .c .yes:hover,
+.container .c .yes2:hover {
+    background-color: rgba(0, 255, 51, 0.159);
+
+}
+.fa-heart {
+    
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 0px;
+    font-size: 0px;
+    /* color: rgb(40, 255, 40); */
+    color: transparent;
+    /* text-shadow: 0 0 20px rgba(0, 255, 51, 0.908) ;*/
+    animation: heart 1s infinite ;
+}
+
+.cc {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.cc .l {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(252, 203, 246);
+    box-shadow: 0 0 80px 20px rgb(255, 0, 221);
+    border-radius: 10px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    transition: 2s;
+    animation: rotate 10s infinite linear;
+    
+}
+.cc .r {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(252, 203, 246);
+    box-shadow: 0 0 80px 20px rgb(255, 0, 221);
+    border-radius: 10px;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    transition: 2s;
+    animation: rotate 10s infinite linear;
+    
+}
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+        
+    }
+    
+    100% {
+        transform: rotateZ(360deg);
+    }
+    
+}
+
+@keyframes heart {
+    0% {
+        font-size: 100px;
+    }
+    50% {
+        font-size: 110px;
+
+    }
+    100% {
+        font-size: 100px;
+
+    }
+    
+}
